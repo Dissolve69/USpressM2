@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fair Eye</title>
+</head>
+<body>
+
+Project Name:  US Press Monitoring System (Fair Eye) & Data Science Sentiment Analysis<br><br>
+
+한일 무역 전쟁이 심화 되면서 양국 관계를 조율 해줄수 있는 미국 오피니언 리더 그리고 미국 언론 반응을 중요하게 다루어야 했다<Br>
+하지만 민감한 이슈에 대해 한국 일부 언론이 소개해 주는 극소수 미국 언론 반응 이외에는 <Br>
+전체적인 미국 오피니언 리더 그리고 전체적인 미국 언론 반응을 확인하기 힘들었다<Br><br>
+
+이 프로젝트는 한국 관련 미국 언론 반응을 전반적으로 모니터할수 있도록 디자인 되었고 <br>
+그 가능성과 작동 과정을 보여주기 위해 미국에서 가장 구독자가 많은 언론사인 USA Today 를 샘플로 선정해 진행하였다.<br><br>
+
+또한 컴퓨터(AI) 스스로 기사의 논조 긍정 부정을 파악할수 있는 Data Science Sentiment Anaylysis 연구를 함께 진행하였고<Br>
+해당 연구 과정과 결과를 한국 정보 올림피아드 코드 페어 해커톤을 통해 공개한다. <Br><Br>
+
+이 프로젝트는 한국 고등학교 학생들로 구성된 팀으로 진행하였고<br>
+어떠한 경우에도 프로젝트를 상업적으로 이용하지 않으며 <br>
+순수 연구 목적과 올바를 정보를 정확하게 전달하 용도 이외에는 관련 정보와 기술을 사용하지 않는다.<br><br>
+
+프로젝트 진행을 위해 Python django Database(SQLite3) 사용하였고 MVC 패턴 (Model-View-Controller) 방식을 채용 <br>
+디자인과 개발 과정 각자가 독자적인 작업이 가능하게 해 한 요소가 다른 요소에 주는 영향을 최소화하며 프로젝트를 진행했다.  <Br>
+또한 If you can read plain english you can understand our source code 원칙을 철저하게 지키려 노력하고 <br>
+Fair Eye 와 Data Science Sentiment Analysis 연구에 관심있는 다른 사람들의 활발한 후속 연구와 개발이 가능하도록 <br>
+완성도 높은 문서 작업에도 많은 시간을 쏟았다. <br><br>
+
+프로젝트 관련 문서, Data Science Sentiment Analysis 연구 문서 그리고 모든 소스 코드 Git Hub를 통해 공개한다.<br><br>
+
+<h1>USAToday - korea realated news from USA Today (searching result 1-4) </h1>
+
+{% for USAtoday in USAtodays %}
+       {{USAtoday}}
+<br/><br/>
+{% endfor %}
+
+<!--
+{% for title in titles %}
+       {{title}}
+<br/><br/>
+{% endfor %}
+
+
+
+{% for date in dates %}
+       {{date}}
+<br />
+{% endfor %}
+
+{% for link in links %}
+       {{link}}
+<br />
+{% endfor %}
+
+{% for author in authors %}
+       {{author}}
+<br />
+{% endfor %}
+
+-->
+</body>
+</html>
